@@ -1,55 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="module" src="./script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        background-color: #f2f2f2;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        color: #777;
+    }
+</style>
 </head>
 <body>
-  
-<div class="desktop-container">
-<div class="desktop-wrapper">
-  
-  <div class="rumusContainer">
-    <div id="rumusEl" class="rumus"></div>
-    <div id="hasilEl" class="hasil"></div>
-  </div>
-  <div class="btnContainer">
-    
-  <div class="desktop-button">
-      
-    <div class="btnChild">
-    <div id="clearEl" class="btn AC">AC</div>
-    <div id="multiEl" class="btn operator">^</div>
-    <div id="percentEl" class="btn operator">%</div>
-    <div id="kaliEl" class="btn operator">×</div>
-    </div><div class="btnChild">
-    <div id="tujuhEl" class="btn btnNum">7</div>
-    <div id="delapanEl" class="btn btnNum">8</div>
-    <div id="sembilanEl" class="btn btnNum">9</div>
-    <div id="bagiEl" class="btn operator">÷</div>
-    </div><div class="btnChild">
-    <div id="empatEl" class="btn btnNum">4</div>
-    <div id="limaEl" class="btn btnNum">5</div>
-    <div id="enamEl" class="btn btnNum">6</div>
-    <div id="kurangEl" class="btn operator">-</div>
-    </div><div class="btnChild">
-    <div id="satuEl" class="btn btnNum">1</div>
-    <div id="duaEl" class="btn btnNum">2</div>
-    <div id="tigaEl" class="btn btnNum">3</div>
-    <div id="tambahEl" class="btn operator">+</div>
-        </div><div class="btnChild">
-    <div id="titikEl" class="btn btnNum">.</div>
-    <div id="nolEl" class="btn btnNum">0</div>
-    <div id="deleteEl" class="btn btnNum">del</div>
-    <div id="jumlahEl" class="btn jumlah">=</div>
+
+<div class="container">
+    <h2 style="text-align: center; color: #007bff;">Login</h2>
+    <form action="kalkulator.html" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <div class="footer">
+        <p class="copyright">&#169; 2024 Lidia putri. All rights reserved.</p>
     </div>
-    
- </div>
- 
-  </div>
-  
 </div>
-</div>
-  
-  <p class="footer">lidia putri</p>
+
 </body>
+</html>
